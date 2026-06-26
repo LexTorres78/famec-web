@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Productos — FAMEC</title>
+  <meta name="description" content="Productos FAMEC: aceite de ricino, biodiésel de higuerilla, torta orgánica y aceites industriales especializados.">
+  <!-- VERIFICACION GOOGLE FOR NONPROFITS — reemplaza PEGAR_CODIGO_AQUI con tu código -->
+  <meta name="google-site-verification" content="PEGAR_CODIGO_AQUI">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .prod-full-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 5rem; }
+    .prod-full-grid.reverse { direction: rtl; }
+    .prod-full-grid.reverse > * { direction: ltr; }
+    .prod-full-photo { border-radius: var(--radius); overflow: hidden; aspect-ratio: 4/3; box-shadow: var(--shadow-lg); }
+    .prod-full-photo img { width:100%; height:100%; object-fit:cover; }
+    .prod-full-text h2 { font-family: var(--head); font-size: 1.8rem; font-weight:800; color:var(--navy); margin-bottom:.8rem; }
+    .prod-full-text p { color:var(--gray); font-size:1rem; line-height:1.75; margin-bottom:1.1rem; }
+    .uses-list { display:flex; flex-wrap:wrap; gap:.6rem; margin-top:1rem; }
+    .use-tag { background:var(--navy-light); border-radius:6px; padding:.35rem .85rem; font-family:var(--head); font-size:.8rem; font-weight:700; color:var(--navy); }
+    .prod-number { font-family:var(--head); font-size:3.5rem; font-weight:800; color:var(--orange); opacity:.18; line-height:1; margin-bottom:-.4rem; }
+    .big-stat { display:flex; gap:2rem; flex-wrap:wrap; margin-top:1.5rem; }
+    .big-stat-item { text-align:center; }
+    .big-stat-num { font-family:var(--head); font-size:1.8rem; font-weight:800; color:var(--navy); display:block; }
+    .big-stat-label { font-size:.8rem; color:var(--gray); }
+    @media(max-width:700px){ .prod-full-grid { grid-template-columns:1fr; } .prod-full-grid.reverse { direction:ltr; } }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap topbar">
+    <a class="logo" href="index.html" aria-label="FAMEC inicio">
+      <img src="assets/img/logo-famec.png" alt="FAMEC" style="height:52px;width:auto;">
+      <div class="logo-name">FAMEC
+        <span>Federación Agro Energética Mixta de Colombia</span>
+      </div>
+    </a>
+    <ul class="nav" id="nav">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="index.html#escalera">Escalera de Valor</a></li>
+      <li><a href="index.html#galeria">Galería</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li class="active"><a href="productos.html">Productos</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <div class="head-actions">
+      <a class="btn btn-orange" href="contacto.html">Contáctanos</a>
+      <button class="burger" id="burger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="page-head">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Inicio</a> › Productos</div>
+    <h1>Nuestros Productos</h1>
+    <p>De la semilla de higuerilla a productos industriales de alto valor: aceite, energía, fertilizantes y especialidades químicas.</p>
+  </div>
+</div>
+
+<!-- ── INTRO ── -->
+<section class="section">
+  <div class="wrap">
+    <div style="max-width:760px; margin:0 auto; text-align:center;" class="reveal">
+      <p class="sec-label" style="justify-content:center">Una semilla, múltiples productos</p>
+      <h2 class="sec-title">La higuerilla: 400+ aplicaciones industriales</h2>
+      <p style="color:var(--gray); font-size:1.05rem; line-height:1.75; margin-top:1rem">El aceite de ricino extraído de las semillas de <em>Ricinus communis</em> contiene el 89% de ácido ricinoleico, un ácido graso hidroxilado único en la naturaleza. Esta singularidad química permite derivar más de 400 productos industriales que van desde lubricantes de alto rendimiento hasta biocombustibles de aviación.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── PRODUCTO 1: ACEITE DE RICINO ── -->
+<section class="section section-cream">
+  <div class="wrap">
+    <div class="prod-full-grid reveal">
+      <div class="prod-full-photo">
+        <img src="assets/img/planta-1.jpg" alt="Planta de higuerilla — semilla de aceite de ricino FAMEC">
+      </div>
+      <div class="prod-full-text">
+        <div class="prod-number">01</div>
+        <p class="sec-label">Producto principal</p>
+        <h2>Aceite de Ricino</h2>
+        <p>El aceite de ricino crudo (<em>castor oil</em>) es el producto central de la cadena FAMEC. Obtenido por prensado frío o extracción con solvente de las semillas maduras de higuerilla, contiene entre el 45 y 50% de aceite por peso de semilla, con 89% de ácido ricinoleico.</p>
+        <p>FAMEC ya ha completado pruebas piloto exitosas en el Meta. El aceite extraído cumple especificaciones técnicas para uso industrial y biocombustibles, con trazabilidad verificada desde el origen.</p>
+        <div class="big-stat">
+          <div class="big-stat-item">
+            <span class="big-stat-num">89%</span>
+            <div class="big-stat-label">Ácido ricinoleico</div>
+          </div>
+          <div class="big-stat-item">
+            <span class="big-stat-num">45–50%</span>
+            <div class="big-stat-label">Aceite por semilla</div>
+          </div>
+          <div class="big-stat-item">
+            <span class="big-stat-num">100%</span>
+            <div class="big-stat-label">Trazable</div>
+          </div>
+        </div>
+        <div class="uses-list" style="margin-top:1.5rem">
+          <span class="use-tag">Industrial</span>
+          <span class="use-tag">Farmacéutico</span>
+          <span class="use-tag">Cosmético</span>
+          <span class="use-tag">Lubricantes</span>
+          <span class="use-tag">Exportación</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PRODUCTO 2: BIODIÉSEL ── -->
+<section class="section">
+  <div class="wrap">
+    <div class="prod-full-grid reverse reveal">
+      <div class="prod-full-photo">
+        <img src="assets/img/proceso-2.jpg" alt="Planta extractora FAMEC — biodiésel">
+      </div>
+      <div class="prod-full-text">
+        <div class="prod-number">02</div>
+        <p class="sec-label">Energía renovable</p>
+        <h2>Biodiésel de Higuerilla</h2>
+        <p>Mediante el proceso de transesterificación del aceite de ricino, FAMEC produce biodiésel de alta calidad (B100). Una hectárea de higuerilla genera hasta 1.300 litros de biodiésel al año, aproximadamente tres veces el rendimiento de la soya.</p>
+        <p>El biodiésel de ricino es compatible con motores diésel convencionales, reduce las emisiones de CO₂ hasta un 80% frente al diésel fósil y puede ser usado puro o en mezclas. Su estabilidad a bajas temperaturas lo hace ideal para uso en aviación sostenible (SAF).</p>
+        <div class="big-stat">
+          <div class="big-stat-item">
+            <span class="big-stat-num">1.300 L</span>
+            <div class="big-stat-label">por hectárea / año</div>
+          </div>
+          <div class="big-stat-item">
+            <span class="big-stat-num">3×</span>
+            <div class="big-stat-label">vs soya</div>
+          </div>
+          <div class="big-stat-item">
+            <span class="big-stat-num">−80%</span>
+            <div class="big-stat-label">emisiones CO₂</div>
+          </div>
+        </div>
+        <div class="uses-list" style="margin-top:1.5rem">
+          <span class="use-tag">Transporte</span>
+          <span class="use-tag">Aviación SAF</span>
+          <span class="use-tag">Generación rural</span>
+          <span class="use-tag">B20 / B100</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PRODUCTO 3: TORTA ── -->
+<section class="section section-cream">
+  <div class="wrap">
+    <div class="prod-full-grid reveal">
+      <div class="prod-full-photo">
+        <img src="assets/img/siembra-1.jpg" alt="Suelo regenerado con torta de higuerilla">
+      </div>
+      <div class="prod-full-text">
+        <div class="prod-number">03</div>
+        <p class="sec-label">Economía circular</p>
+        <h2>Torta de Higuerilla</h2>
+        <p>La torta es el residuo sólido que queda tras la extracción del aceite. Rica en nitrógeno, fósforo y materia orgánica, puede emplearse como fertilizante orgánico de liberación lenta o como biomasa para generación de energía térmica.</p>
+        <p>Su incorporación al suelo cierra el ciclo de nutrientes, complementando la capacidad regenerativa de las raíces profundas de la higuerilla y potenciando la fitorremediación de metales pesados. FAMEC desarrolla protocolos de uso agronómico para maximizar su valor.</p>
+        <div class="uses-list" style="margin-top:1.5rem">
+          <span class="use-tag">Fertilizante orgánico</span>
+          <span class="use-tag">Biomasa</span>
+          <span class="use-tag">Fitorremediación</span>
+          <span class="use-tag">Economía circular</span>
+          <span class="use-tag">Compostaje</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PRODUCTO 4: ESPECIALIDADES INDUSTRIALES ── -->
+<section class="section">
+  <div class="wrap">
+    <div class="prod-full-grid reverse reveal">
+      <div class="prod-full-photo">
+        <img src="assets/img/planta-2.jpg" alt="Fruto de higuerilla — aceite industrial">
+      </div>
+      <div class="prod-full-text">
+        <div class="prod-number">04</div>
+        <p class="sec-label">Mercado especializado</p>
+        <h2>Aceites Industriales Especializados</h2>
+        <p>Más allá del biodiésel, el aceite de ricino es materia prima esencial para más de 400 productos industriales. Su estabilidad química, viscosidad única y alta temperatura de ignición lo hacen irreemplazable en varias industrias.</p>
+        <p>FAMEC apunta a segmentos de alto valor: lubricantes para motores de carreras, turbinas y refrigeración; nylon-11 y bioplásticos; tintas de impresión y barnices; productos farmacéuticos de grado USP; y cosméticos naturales certificados.</p>
+        <div class="uses-list" style="margin-top:1.5rem">
+          <span class="use-tag">Lubricantes HT</span>
+          <span class="use-tag">Nylon-11</span>
+          <span class="use-tag">Bioplásticos</span>
+          <span class="use-tag">Tintas y barnices</span>
+          <span class="use-tag">Farmacéutico USP</span>
+          <span class="use-tag">Cosméticos</span>
+          <span class="use-tag">Refrigeración</span>
+          <span class="use-tag">Pinturas ecológicas</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PLANTA EXTRACTORA ── -->
+<section class="section section-navy">
+  <div class="wrap">
+    <div class="reveal" style="text-align:center; margin-bottom:2.5rem">
+      <p class="sec-label" style="justify-content:center">Infraestructura industrial</p>
+      <h2 class="sec-title">Planta Extractora FAMEC</h2>
+      <p style="color:rgba(255,255,255,.72); max-width:580px; margin:0 auto; font-size:1rem; line-height:1.7">Centro agroenergético en desarrollo — sede inicial en el Departamento del Meta.</p>
+    </div>
+    <div class="pilares-grid reveal">
+      <div class="pilar-card">
+        <div class="pilar-icon">
+          <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+        </div>
+        <h3>30.000 T/año</h3>
+        <p>Capacidad de procesamiento de semilla de higuerilla en dos fases de expansión.</p>
+      </div>
+      <div class="pilar-card">
+        <div class="pilar-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+        </div>
+        <h3>2 Fases</h3>
+        <p>Fase 1: extracción primaria. Fase 2: refinación y procesamiento de subproductos.</p>
+      </div>
+      <div class="pilar-card">
+        <div class="pilar-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6L23 9 12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/></svg>
+        </div>
+        <h3>100% Renovable</h3>
+        <p>Operación con energía solar fotovoltaica y biogás proveniente de los subproductos del proceso.</p>
+      </div>
+      <div class="pilar-card">
+        <div class="pilar-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        </div>
+        <h3>Meta — Sede Inicial</h3>
+        <p>Centro de acopio regional con expansión planificada a 5 regiones de Colombia para 2035.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ── -->
+<section class="cta-band">
+  <div class="wrap" style="position:relative;z-index:1">
+    <div class="reveal">
+      <h2>¿Interesado en nuestros productos?</h2>
+      <p>Contáctanos para cotizaciones, alianzas industriales o para conocer cómo vincularte a la cadena de valor de la higuerilla.</p>
+      <div class="cta-actions">
+        <a class="btn btn-orange" href="contacto.html">Contáctanos</a>
+        <a class="btn btn-outline" href="nosotros.html">Conócenos</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="objeto-strip">
+  <div class="wrap">
+    <p>FAMEC · NIT 901823266-2 — Federación Agro Energética Mixta de Colombia · federacionfamec@gmail.com · 314 406 8801 · www.famec.co · Calle 33 Sur #46-03, Barrio Montecarlo, Villavicencio, Meta</p>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="foot-top">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <img src="assets/img/logo-famec.png" alt="FAMEC" style="height:44px;width:auto;margin-bottom:.8rem;">
+          <p>Federación gremial sin ánimo de lucro para el desarrollo de la cadena agroenergética de la higuerilla en Colombia.</p>
+        </div>
+        <div class="foot-col">
+          <h4>Navegación</h4>
+          <a href="index.html">Inicio</a>
+          <a href="nosotros.html">Nosotros</a>
+          <a href="productos.html">Productos</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+        <div class="foot-col">
+          <h4>Contacto</h4>
+          <p>Calle 33 Sur #46-03, Barrio Montecarlo, Villavicencio, Meta</p>
+          <a href="tel:+573144068801">314 406 8801</a>
+          <a href="mailto:federacionfamec@gmail.com">federacionfamec@gmail.com</a>
+          <a href="https://www.famec.co" target="_blank">www.famec.co</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <div class="wrap">
+      © <span id="year"></span> FAMEC · NIT 901823266-2 — Federación Agro Energética Mixta de Colombia · Todos los derechos reservados.
+    </div>
+  </div>
+</footer>
+
+<a class="float-wa" href="https://api.whatsapp.com/send?phone=573144068801&text=Hola%20FAMEC%2C%20quiero%20información" target="_blank" rel="noopener">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.9 5-1.3A10 10 0 1 0 12 2z"/></svg>
+  Escríbenos
+</a>
+
+<script src="main.js"></script>
+</body>
+</html>
